@@ -1,27 +1,38 @@
-// import logo from './logo.svg';
-import "./App.css";
+import { projects } from "./Data";
 
 function App() {
+  console.log(projects);
+
   return (
-    <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+    <div className=" h-screen">
+      <div className="p-6 font-medium text-4xl">Vidyadhar Gowd J</div>
+      <div className="px-6 font-semibold">
+        Github:{" "}
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/vidyadhar03"
           target="_blank"
-          rel="noopener noreferrer"
+          className="hover:text-blue-800"
         >
-          Learn React
+          @vidyadhar03
         </a>
-      </header> */}
-      <header className="App-header">
-        <div>Vidyadhar Gowd's PortFolio</div>
-        <h1>Projects</h1>
-      </header>
+        <div>
+          Contact: vidyadhariitkgp@gmail.com , +917478022333
+        </div>
+      </div>
+      <div className="px-6 font-bold text-2xl mt-6">Projects</div>
+      <div className="grid grid-cols-3">
+        {projects.map((project, index) => (
+          <div key={index} className="">
+            <div className="flex flex-col p-4 border-2 border-black-200 rounded-md shadow-md m-4 bg-white">
+              <div className="mb-4 font-medium text-xl">{project.title}</div>
+              <div className="flex">
+                <div className="font-semibold mr-2">Tech Stack :</div>
+                <div className=""> {project.stack}</div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
