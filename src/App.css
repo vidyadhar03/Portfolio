@@ -2,6 +2,18 @@
   @apply bg-slate-100 py-14 px-28
 }
 
+.info{
+  @apply flex mt-4
+}
+
+.touch{
+  @apply flex items-center ml-4 font-semibold underline hover:no-underline cursor-pointer
+}
+
+.email{
+  @apply flex items-center ml-4 font-semibold underline
+}
+
 .designation{
   @apply mt-8 font-semibold text-2xl w-96 break-words
 }
@@ -30,6 +42,18 @@
 @media (max-width: 768px){
   .parent{
     @apply bg-slate-100 p-6
+  }
+
+  .info{
+    @apply flex flex-col mt-4
+  }
+
+  .touch{
+    @apply flex items-center ml-0 mt-1 font-semibold underline hover:no-underline cursor-pointer
+  }
+  
+  .email{
+    @apply flex items-center ml-0 mt-2 font-semibold underline
   }
 
   .designation{
