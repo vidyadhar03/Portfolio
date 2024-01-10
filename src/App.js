@@ -6,10 +6,14 @@ function App() {
   const [showmail, setShowmail] = useState(false);
 
   return (
-    <div class="parent">
+    <div className="bg-slate-100 p-6 md:py-14 md:px-28">
       <div className="font-medium text-6xl">Vidyadhar Gowd</div>
 
-      <div class="info">
+      <div className="text-black text-2xl font-semibold mt-4 ml-1">
+        IIT Kharagpur alumnus 2020.
+      </div>
+
+      <div className="flex flex-col mt-2 md:flex-row ">
         <div className="flex items-center">
           <img src="./githublogo.png" className="w-8 h-8" />
           <a
@@ -21,7 +25,7 @@ function App() {
           </a>
         </div>
         <div
-          class="touch"
+          className="flex items-center ml-0 md:ml-4 mt-1 md:mt-0 font-semibold underline hover:no-underline cursor-pointer"
           onClick={() => {
             showmail ? setShowmail(false) : setShowmail(true);
           }}
@@ -29,18 +33,18 @@ function App() {
           <img src="./gmailogo.png" className="w-6 h-6 mx-1" />
           Get in touch
         </div>
-        <div class="email">
+        <div className="flex items-center ml-0 md:ml-4 mt-2 md:mt-0 font-semibold underline">
           {showmail && <div>vidyadhariitkgp@gmail.com</div>}
         </div>
       </div>
 
-      <div class="designation">
-        Senior Software Engineer with over 3 years of experience with passion to
-        develop useful websites for people.
+      <div className="mt-16 font-semibold text-2xl w-80 md:w-96 slide-in-right">
+        Software Engineer with over 3 years of experience, driven to build
+        impactful things for good people.
       </div>
 
-      <div class="experiencediv">
-        <div class="exptitle">
+      <div className="flex flex-col md:flex-row p-8 md:p-12 mt-8 rounded-3xl shadow-lg border-2 hover:shadow-xl slide-in">
+        <div className="w-full md:w-2/5 font-bold text-2xl flex flex-col ">
           <div className="cursor-pointer underline hover:no-underline ">
             <a href="https://www.bajajfinserv.in/" target="_blank">
               Bajaj Finserv Ltd.
@@ -48,20 +52,24 @@ function App() {
           </div>
           <div className="text-xl mt-1">2020-2023</div>
         </div>
-        <div class="expdesc">
-          Wroked on 3in1 App and managed 7 out of the 23 App modules and did
-          android development of store locator module using MMI Map SDK.
-          <br />
-          Wroked on 3in1 App and managed 7 out of the 23 App modules and did
-          android development of store locator module using MMI Map SDK.
+        <div className="w-full md:w-3/5 flex text-lg mt-8 md:mt-0">
+          "Delivered 7 key modules in the Bajaj SuperApp with 10M+ users."
+          "Independently developed the Store Locator module using Java and
+          Kotlin in Android Studio." "Managed end-to-end development of Credit
+          Card Acquisition, App-In-App, and Locator modules." "Implemented
+          efficient front-to-backend data architectures aligning with business
+          needs."
         </div>
       </div>
 
-      <div className="font-bold text-2xl mt-8 ">Projects</div>
+      <div className="font-bold text-3xl mt-8 ">Projects</div>
 
-      <div class="projectsdiv">
+      <div className="grid grid-cols-1 mt-4  md:grid-cols-2 md:gap-x-8">
         {projects.map((project, index) => (
-          <div key={index} class="projectinddiv">
+          <div
+            key={index}
+            className="flex flex-col justify-between p-4 border-2 rounded-xl shadow-lg my-4 hover:shadow-xl"
+          >
             <div className="flex mb-4 ">
               <div className="flex-1 font-bold text-2xl underline hover:no-underline cursor-pointer">
                 <a href={project.sitelink} target="_blank">
@@ -78,7 +86,16 @@ function App() {
 
             <div className=" text-md">
               <div className="font-semibold mt-2 ">Built With:</div>
-              <div className="">{project.stack}</div>
+              <div className="flex">
+                {project.stack.map((tech, index) => (
+                  <div
+                    key={index}
+                    className="py-1 px-2 border-2 border-gray-400 rounded-lg m-1 "
+                  >
+                    {tech}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         ))}
