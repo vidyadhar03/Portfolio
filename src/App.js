@@ -5,6 +5,13 @@ import { useState } from "react";
 function App() {
   const [showmail, setShowmail] = useState(false);
 
+  const fullText =
+    "Delivered 7 key modules in the Bajaj SuperApp with 10M+ users.";
+  const boldWord = "Bajaj SuperApp";
+
+  // Splitting the text
+  const parts = fullText.split(boldWord);
+
   return (
     <div className="bg-slate-100 p-6 md:py-14 md:px-28">
       <div className="font-medium text-6xl">Vidyadhar Gowd</div>
@@ -45,7 +52,7 @@ function App() {
 
       <div className="flex flex-col md:flex-row p-8 md:p-12 mt-8 rounded-3xl shadow-lg border-2 hover:shadow-xl slide-in">
         <div className="w-full md:w-2/5 font-bold text-2xl flex flex-col ">
-          <div className="cursor-pointer underline hover:no-underline ">
+          <div className="cursor-pointer underline hover:no-underline">
             <a href="https://www.bajajfinserv.in/" target="_blank">
               Bajaj Finserv Ltd.
             </a>
@@ -53,16 +60,39 @@ function App() {
           <div className="text-xl mt-1">2020-2023</div>
         </div>
         <div className="w-full md:w-3/5 flex text-lg mt-8 md:mt-0">
-          "Delivered 7 key modules in the Bajaj SuperApp with 10M+ users."
-          "Independently developed the Store Locator module using Java and
-          Kotlin in Android Studio." "Managed end-to-end development of Credit
-          Card Acquisition, App-In-App, and Locator modules." "Implemented
-          efficient front-to-backend data architectures aligning with business
-          needs."
+          <div className="flex flex-col  text-lg">
+            <div className="flex flex-wrap ">
+              {/* <span>{parts[0]}</span> */}
+              <span>Helped launch the</span>
+              <a
+                href="https://play.google.com/store/apps/details?id=org.altruist.BajajExperia&pcampaignid=web_share"
+                className="font-bold underline mx-1"
+                target="_blank"
+              >
+                Bajaj SuperApp
+              </a>
+              <span>with 50M+ users.</span>
+              {/* <span>{parts[1]}</span> */}
+            </div>
+
+            <div className="mt-2 ">
+              Led the autonomous development of the 'Store Locator' module,
+              skillfully employing Kotlin within the Android Studio environment.{" "}
+            </div>
+            <div className="mt-2">
+              Handled the full-cycle development of key projects such as the
+              'Credit Card Acquisition', 'App-In-App', and 'Locator' modules.
+            </div>
+            <div className="mt-2">
+              Designed and implemented effective data architectures that
+              efficiently bridged front-end and back-end systems, aligning with
+              business goals.
+            </div>
+          </div>
         </div>
       </div>
 
-      <div className="font-bold text-3xl mt-8 ">Projects</div>
+      <div className="font-bold text-3xl mt-16 ">Recent Projects</div>
 
       <div className="grid grid-cols-1 mt-4  md:grid-cols-2 md:gap-x-8">
         {projects.map((project, index) => (

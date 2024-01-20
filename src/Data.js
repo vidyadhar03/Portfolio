@@ -1,14 +1,14 @@
 export const projects=[{
+    title:"Mind Cache AI",
+    stack:["React","Express","Mongo DB"],
+    github:"https://github.com/vidyadhar03/Tracker",
+    description:"A Site for mental wellbeing using simple and straight forward thought tracking method. Need to integrate OPEN AI that is remaining yet to be completed!!",
+    sitelink:"https://google.com"
+},{
     title:"Trippy Tree",
     stack:["React","firebase"],
     github:"https://github.com/vidyadhar03/TrippyTree",
     description:"An E-commerce site which is a collection of trip essentials.coded from scrath using reactjs and used firebase for the development purposes.",
-    sitelink:"https://google.com"
-},{
-    title:"Tracker",
-    stack:["React","Express","Mongo DB"],
-    github:"https://github.com/vidyadhar03/Tracker",
-    description:"A Site for mental wellbeing using simple and straight forward thought tracking method. Need to integrate OPEN AI that is remaining yet to be completed!!",
     sitelink:"https://google.com"
 },{
     title:"Pluto",
