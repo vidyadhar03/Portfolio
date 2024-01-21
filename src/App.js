@@ -5,16 +5,9 @@ import { useState } from "react";
 function App() {
   const [showmail, setShowmail] = useState(false);
 
-  const fullText =
-    "Delivered 7 key modules in the Bajaj SuperApp with 10M+ users.";
-  const boldWord = "Bajaj SuperApp";
-
-  // Splitting the text
-  const parts = fullText.split(boldWord);
-
   return (
-    <div className="bg-slate-100 p-6 md:py-14 md:px-28">
-      <div className="font-medium text-6xl">Vidyadhar Gowd</div>
+    <div className=" p-6 md:py-14 md:px-28">
+      <div className="font-medium text-4xl md:text-6xl">Vidyadhar Gowd</div>
 
       <div className="text-black text-2xl font-semibold mt-4 ml-1">
         IIT Kharagpur alumnus 2020.
@@ -60,39 +53,44 @@ function App() {
           <div className="text-xl mt-1">2020-2023</div>
         </div>
         <div className="w-full md:w-3/5 flex text-lg mt-8 md:mt-0">
-          <div className="flex flex-col  text-lg">
-            <div className="flex flex-wrap ">
-              {/* <span>{parts[0]}</span> */}
-              <span>Helped launch the</span>
-              <a
-                href="https://play.google.com/store/apps/details?id=org.altruist.BajajExperia&pcampaignid=web_share"
-                className="font-bold underline mx-1"
-                target="_blank"
-              >
-                Bajaj SuperApp
-              </a>
-              <span>with 50M+ users.</span>
-              {/* <span>{parts[1]}</span> */}
-            </div>
 
-            <div className="mt-2 ">
-              Led the autonomous development of the 'Store Locator' module,
-              skillfully employing Kotlin within the Android Studio environment.{" "}
-            </div>
-            <div className="mt-2">
-              Handled the full-cycle development of key projects such as the
-              'Credit Card Acquisition', 'App-In-App', and 'Locator' modules.
-            </div>
-            <div className="mt-2">
-              Designed and implemented effective data architectures that
-              efficiently bridged front-end and back-end systems, aligning with
-              business goals.
-            </div>
+          <div className="flex flex-col text-lg">
+            <ul className="list-disc pl-5">
+              <li>
+                <div className="flex flex-wrap">
+                  <span>Helped launch the</span>
+                  <a
+                    href="https://play.google.com/store/apps/details?id=org.altruist.BajajExperia&pcampaignid=web_share"
+                    className="font-bold underline mx-1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Bajaj SuperApp
+                  </a>
+                  <span>with 50M+ users.</span>
+                </div>
+              </li>
+
+              <li className="mt-2">
+                Led the autonomous development of the 'Store Locator' module,
+                skillfully employing Kotlin within the Android Studio
+                environment.
+              </li>
+              <li className="mt-2">
+                Handled the full-cycle development of key projects such as the
+                'Credit Card Acquisition', 'App-In-App', and 'Locator' modules.
+              </li>
+              <li className="mt-2">
+                Designed and implemented effective data architectures that
+                efficiently bridged front-end and back-end systems, aligning
+                with business goals.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
 
-      <div className="font-bold text-3xl mt-16 ">Recent Projects</div>
+      <div className="font-bold text-4xl mt-16 ">Recent Projects</div>
 
       <div className="grid grid-cols-1 mt-4  md:grid-cols-2 md:gap-x-8">
         {projects.map((project, index) => (
@@ -101,12 +99,12 @@ function App() {
             className="flex flex-col justify-between p-4 border-2 rounded-xl shadow-lg my-4 hover:shadow-xl"
           >
             <div className="flex mb-4 ">
-              <div className="flex-1 font-bold text-2xl underline hover:no-underline cursor-pointer">
+              <div className="flex w-3/4 font-bold text-2xl underline hover:no-underline cursor-pointer">
                 <a href={project.sitelink} target="_blank">
                   {project.title}
                 </a>
               </div>
-              <div className="flex-1  flex justify-end">
+              <div className="flex w-1/4   justify-end">
                 <a href={project.github} target="_blank">
                   <img src="./githublogo.png" className="w-8 h-8" />
                 </a>
