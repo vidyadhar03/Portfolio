@@ -6,7 +6,7 @@ function App() {
   const [showmail, setShowmail] = useState(false);
 
   return (
-    <div className=" p-6 md:py-14 md:px-28">
+    <div className="bg-gray-50 p-6 md:py-14 md:px-28">
       <div className="font-medium text-4xl md:text-6xl">Vidyadhar Gowd</div>
 
       <div className="text-black text-2xl font-semibold mt-4 ml-1">
@@ -53,7 +53,6 @@ function App() {
           <div className="text-xl mt-1">2020-2023</div>
         </div>
         <div className="w-full md:w-3/5 flex text-lg mt-8 md:mt-0">
-
           <div className="flex flex-col text-lg">
             <ul className="list-disc pl-5">
               <li>
@@ -70,16 +69,18 @@ function App() {
                   <span>with 50M+ users.</span>
                 </div>
               </li>
+              <li className="mt-2">
+                Took full ownership and delivered 7 out of 24 critical
+                modulessuch as the 'Credit Card Acquisition', 'App-In-App', and
+                'Locator'.
+              </li>
 
               <li className="mt-2">
                 Led the autonomous development of the 'Store Locator' module,
                 skillfully employing Kotlin within the Android Studio
                 environment.
               </li>
-              <li className="mt-2">
-                Handled the full-cycle development of key projects such as the
-                'Credit Card Acquisition', 'App-In-App', and 'Locator' modules.
-              </li>
+
               <li className="mt-2">
                 Designed and implemented effective data architectures that
                 efficiently bridged front-end and back-end systems, aligning
