@@ -34,7 +34,7 @@ function App() {
           Get in touch
         </div>
         <div className="flex items-center ml-0 md:ml-4 mt-2 md:mt-0 font-semibold underline">
-          {showmail && <div>vidyadhariitkgp@gmail.com</div>}
+          {showmail && <a href="mailto:mindcacheai03@gmail.com">vidyadhariitkgp@gmail.com</a>}
         </div>
       </div>
 
@@ -71,7 +71,7 @@ function App() {
               </li>
               <li className="mt-2">
                 Took full ownership and delivered 7 out of 24 critical
-                modulessuch as the 'Credit Card Acquisition', 'App-In-App', and
+                modules such as the 'Credit Card Acquisition', 'App-In-App', and
                 'Locator'.
               </li>
 
