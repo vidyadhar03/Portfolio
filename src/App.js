@@ -31,10 +31,10 @@ function App() {
           }}
         >
           <img src="./gmailogo.png" className="w-6 h-6 mx-1" />
-          Get in touch
+          <a href="mailto:vidyadhariitkgp@gmail.com">Get in touch</a>
         </div>
         <div className="flex items-center ml-0 md:ml-4 mt-2 md:mt-0 font-semibold underline">
-          {showmail && <a href="mailto:mindcacheai03@gmail.com">vidyadhariitkgp@gmail.com</a>}
+          {showmail && <a href="mailto:vidyadhariitkgp@gmail.com">vidyadhariitkgp@gmail.com</a>}
         </div>
       </div>
 
