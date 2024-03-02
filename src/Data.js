@@ -5,7 +5,7 @@ export const projects = [
     github: "https://github.com/vidyadhar03/Tracker",
     description:
       "Mind Cache AI is a subscription-based service enhancing productivity with OpenAI GPT's AI capabilities. It includes an AI-powered Reflection Companion, incorporating React.js, Express.js, and MongoDB for a seamless user experience.",
-    sitelink: "https://mind-cache-ai.web.app/",
+    sitelink: "https://mindcaching.web.app/",
   },
   {
     title: "Trippy Tree",
