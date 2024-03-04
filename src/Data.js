@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: "Mind Cache AI",
-    stack: ["React", "Express", "Mongo DB"],
+    stack: ["React", "Express", "Mongo DB","Razor Pay"],
     github: "https://github.com/vidyadhar03/Tracker",
     description:
       "Mind Cache AI is a subscription-based service enhancing productivity with OpenAI GPT's AI capabilities. It includes an AI-powered Reflection Companion, incorporating React.js, Express.js, and MongoDB for a seamless user experience.",
