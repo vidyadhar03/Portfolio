@@ -8,6 +8,14 @@ export const projects = [
     sitelink: "https://mindcaching.web.app/",
   },
   {
+    title: "Web Weave",
+    stack: ["React", "Firebase"],
+    github: "https://github.com/vidyadhar03/TrippyTree",
+    description:
+      "Trippy Tree is a comprehensive eCommerce site, crafted using Firebase and React.js. It offers a fluid and engaging online shopping experience, integrating modern web technologies for ease of use.",
+    sitelink: "https://trippytree-a4793.web.app/",
+  },
+  {
     title: "Trippy Tree",
     stack: ["React", "Firebase"],
     github: "https://github.com/vidyadhar03/TrippyTree",
