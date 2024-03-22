@@ -9,7 +9,7 @@ export const projects = [
   },
   {
     title: "Web Weave",
-    stack: ["React", "Firebase"],
+    stack: ["ReactJS", "Express","Redis","AWS S3"],
     github: "https://github.com/vidyadhar03/TrippyTree",
     description:
       "Trippy Tree is a comprehensive eCommerce site, crafted using Firebase and React.js. It offers a fluid and engaging online shopping experience, integrating modern web technologies for ease of use.",
