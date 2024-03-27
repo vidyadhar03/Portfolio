@@ -10,10 +10,10 @@ export const projects = [
   {
     title: "Web Weave",
     stack: ["ReactJS", "Express","Redis","AWS S3"],
-    github: "https://github.com/vidyadhar03/TrippyTree",
+    github: "https://github.com/vidyadhar03/WebWeave",
     description:
-      "Trippy Tree is a comprehensive eCommerce site, crafted using Firebase and React.js. It offers a fluid and engaging online shopping experience, integrating modern web technologies for ease of use.",
-    sitelink: "https://trippytree-a4793.web.app/",
+      "I created Web Weave, a platform that enables seamless deployment of React and JavaScript front-ends from GitHub repositories. Utilizing a microservices architecture, it streamlines the deployment workflow and manages requests efficiently. Web Weave integrates AWS S3 for storing project data and build artifacts, alongside Redis for queue management. This solution employs ReactJS, Express, AWS S3, and Redis, offering a comprehensive and efficient deployment service.",
+    sitelink: "https://www.google.co.in/",
   },
   {
     title: "Trippy Tree",
