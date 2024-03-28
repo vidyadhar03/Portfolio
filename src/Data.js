@@ -12,7 +12,7 @@ export const projects = [
     stack: ["ReactJS", "Express","Redis","AWS S3"],
     github: "https://github.com/vidyadhar03/WebWeave",
     description:
-      "I created Web Weave, a platform that enables seamless deployment of React and JavaScript front-ends from GitHub repositories. Utilizing a microservices architecture, it streamlines the deployment workflow and manages requests efficiently. Web Weave integrates AWS S3 for storing project data and build artifacts, alongside Redis for queue management. This solution employs ReactJS, Express, AWS S3, and Redis, offering a comprehensive and efficient deployment service.",
+      "A platform that enables deployment of React and JavaScript front-ends from GitHub repositories URL directly. Utilizing a microservices architecture, it streamlines the deployment workflow and manages requests efficiently.",
     sitelink: "https://www.google.co.in/",
   },
   {
