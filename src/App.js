@@ -115,17 +115,21 @@ function App() {
 
             <div className=" text-md">
               <div className="font-semibold mt-2 ">Built With:</div>
-              <div className="flex">
+
+              <div className="flex flex-wrap">
                 {project.stack.map((tech, index) => (
                   <div
                     key={index}
-                    className="py-1 px-2 border-2 border-gray-400 rounded-lg m-1 "
+                    className="py-1 px-2 border-2 border-gray-400 rounded-lg m-1 flex justify-center"
+                    id="techblock"
                   >
                     {tech}
                   </div>
                 ))}
-              </div>
+              </div> 
+
             </div>
+
           </div>
         ))}
       </div>
