@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: "Mind Cache AI",
-    stack: ["ReactJS", "Express", "Mongo DB", "Razor Pay"],
+    stack: ["ReactJS", "ExpressJS", "Mongo DB", "Razor Pay"],
     github: "https://github.com/vidyadhar03/Tracker",
     description:
       "Mind Cache AI is a subscription-based service enhancing productivity with OpenAI GPT's AI capabilities. It includes an AI-powered Reflection Companion, incorporating React.js, Express.js, and MongoDB for a seamless user experience.",
@@ -9,7 +9,7 @@ export const projects = [
   },
   {
     title: "Web Weave",
-    stack: ["ReactJS", "Express", "Redis", "AWS S3"],
+    stack: ["ReactJS", "ExpressJS", "Redis", "AWS S3"],
     github: "https://github.com/vidyadhar03/WebWeave",
     description:
       "A platform that enables deployment of React and JavaScript front-ends from GitHub repositories URL directly. Utilizing a microservices architecture, it streamlines the deployment workflow and manages requests efficiently.",
