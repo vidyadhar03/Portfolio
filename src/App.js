@@ -10,7 +10,7 @@ function App() {
   function IntroSection() {
     return (
       <div className="blur-bg">
-        <div className="font-medium text-4xl md:text-6xl">Vidyadhar Gowd</div>
+        <div className="font-medium text-4xl md:text-6xl ">Vidyadhar Gowd</div>
         <div className="text-black text-2xl font-semibold mt-4 ml-1">
           IIT Kharagpur alumnus 2020.
         </div>
@@ -52,7 +52,7 @@ function App() {
 
   function WorkExperience() {
     return (
-      <div className="blur-bg">
+      <div className="blur-bg bg-opacity-20 backdrop-blur-lg">
         <div className="flex flex-col md:flex-row p-8 md:p-12 mt-8 rounded-3xl shadow-lg border-2 hover:shadow-xl slide-in">
           <div className="w-full md:w-2/5 font-bold text-2xl flex flex-col ">
             <div className="cursor-pointer underline hover:no-underline">
@@ -104,13 +104,13 @@ function App() {
 
   function RecentProjects() {
     return (
-      <div className="blur-bg">
+      <div className="blur-bg ">
         <div className="font-bold text-4xl mt-16 ">Recent Projects</div>
         <div className="grid grid-cols-1 mt-4  md:grid-cols-2 md:gap-x-8">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="flex flex-col justify-between p-4 border-2 rounded-xl shadow-lg my-4 hover:shadow-xl"
+              className="flex flex-col justify-between p-4 border-2 rounded-xl shadow-lg my-4 hover:shadow-xl bg-opacity-20 backdrop-blur-lg"
             >
               <div className="flex mb-4 ">
                 <div className="flex w-3/4 font-bold text-2xl underline hover:no-underline cursor-pointer">
@@ -151,8 +151,10 @@ function App() {
       <BubbleBackground />
       <div className=" ">
         <IntroSection /> 
+        <div className="">
         <WorkExperience />
         <RecentProjects />
+        </div>
       </div>
     </div>
   );
