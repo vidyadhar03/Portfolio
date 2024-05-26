@@ -87,7 +87,7 @@ const BubbleBackground = () => {
 
     animate();
 
-    // Change colors every second
+    // Change colors every second 
     const colorChangeInterval = setInterval(changeColors, 3000);
 
     const handleResize = () => {
